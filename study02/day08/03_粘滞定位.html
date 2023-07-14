@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>粘滞定位</title>
+    <style>
+        body{
+            height: 3000px;
+        }
+        .box1{
+            width: 1200px;
+            height: 40px;
+            background-color: tomato;
+            margin: 100px auto;
+            /*
+               将元素的position设置sticky则开启了元素的粘滞定位，
+                   粘滞定位的特点和相对定位类似
+               定位参照物：
+                   粘滞定位相对于离它最近的拥有滚动条祖先元素来定位的
+           */
+            position: sticky;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto aspernatur, commodi cupiditate distinctio ea eaque est in incidunt labore maiores molestias officia perferendis provident quaerat quibusdam ratione rem rerum!
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto aspernatur, commodi cupiditate distinctio ea eaque est in incidunt labore maiores molestias officia perferendis provident quaerat quibusdam ratione rem rerum!
+    </p>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto aspernatur, commodi cupiditate distinctio ea eaque est in incidunt labore maiores molestias officia perferendis provident quaerat quibusdam ratione rem rerum!
+    </p>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        img {
+            width: 33%;
+            height: auto;
+            float: left;
+            max-width: 235px;
+        }
+        .blur { /*模糊*/
+            -webkit-filter: blur(4px);
+            filter: blur(4px);
+        }
+        .brightness { /*亮度*/
+            -webkit-filter: brightness(250%);
+            filter: brightness(250%);
+        }
+        .contrast { /*对比度*/
+            -webkit-filter: contrast(180%);
+            filter: contrast(180%);
+        }
+        .grayscale { /*灰度*/
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+        }
+        .huerotate { /*色调旋转*/
+            -webkit-filter: hue-rotate(180deg); /*deg 度*/
+            filter: hue-rotate(180deg);
+        }
+        .invert { /*反色*/
+            -webkit-filter: invert(100%); /*deg 度*/
+            filter: invert(100%);
+        }
+        .opacity { /*不透明度*/
+            -webkit-filter: opacity(50%); /*deg 度*/
+            filter: opacity(50%);
+        }
+        .saturate { /*饱和度*/
+            -webkit-filter: saturate(7); /*deg 度*/
+            filter: saturate(7);
+        }
+        .sepia {
+            -webkit-filter: sepia(100%); /*deg 度*/
+            filter: sepia(100%);
+        }
+        .shadow { /*阴影*/
+            -webkit-filter: drop-shadow(8px 8px 10px green); /*deg 度*/
+            filter: drop-shadow(8px 8px 10px green);
+        }
+    </style>
+</head>
+<body>
+
+<p><strong>注意:</strong> Internet Explorer <span lang="no-bok">或 Safari 5.1 (及更早版本)</span> 不支持该属性。</p>
+
+<img src="https://www.runoob.com/try/demo_source/pineapple.jpg" alt="Pineapple" width="300" height="300">
+<img class="blur" src="https://www.runoob.com/try/demo_source/pineapple.jpg" alt="Pineapple" width="300" height="300">
+<img class="brightness" src="https://www.runoob.com/try/demo_source/pineapple.jpg" alt="Pineapple" width="300" height="300">
+<img class="contrast" src="https://www.runoob.com/try/demo_source/pineapple.jpg" alt="Pineapple" width="300" height="300">
+<img class="grayscale" src="https://www.runoob.com/try/demo_source/pineapple.jpg" alt="Pineapple" width="300" height="300">
+<img class="huerotate" src="https://www.runoob.com/try/demo_source/pineapple.jpg" alt="Pineapple" width="300" height="300">
+<img class="invert" src="https://www.runoob.com/try/demo_source/pineapple.jpg" alt="Pineapple" width="300" height="300">
+<img class="opacity" src="https://www.runoob.com/try/demo_source/pineapple.jpg" alt="Pineapple" width="300" height="300">
+<img class="saturate" src="https://www.runoob.com/try/demo_source/pineapple.jpg" alt="Pineapple" width="300" height="300">
+<img class="sepia" src="https://www.runoob.com/try/demo_source/pineapple.jpg" alt="Pineapple" width="300" height="300">
+<img class="shadow" src="https://www.runoob.com/try/demo_source/pineapple.jpg" alt="Pineapple" width="300" height="300">
+
+</body>
+</html>

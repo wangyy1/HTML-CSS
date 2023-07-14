@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>伪元素</title>
+    <style>
+        /*
+          通过before、after可以选中元素开始或结束的位置，从而为其添加内容。
+            注意：这里的内容是通过CSS添加的！不算是网页中的正式内容。
+                1.通过它可以为元素添加一些统一的符号
+                2.也可以在特殊场景下通过它们来调整一下页面的样式
+        */
+        div::before {
+            content: "before";
+            color: red;
+        }
+
+        div::after {
+            content: "after";
+            color: red;
+        }
+
+        section::before {
+            content: ">";
+        }
+
+        p::first-letter {
+            font-size: 30px;
+        }
+        p::first-line {
+            background: tomato;
+        }
+        p::selection {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+<!--
+    伪元素
+      - 伪元素表示的是页面中特殊的位置
+      - 伪元素使用::开头
+      ::before
+        - 元素的开始位置（开始标签之后）
+      ::after
+        - 元素的结束位置（结束标签之前）
+      ::first-letter
+        - 首字母
+      ::first-line
+        - 第一行
+      ::selection
+        - 选中的文字的样式
+-->
+    <div>我是一个div</div>
+
+    <hr>
+    <section>第一项</section>
+    <section>第二项</section>
+    <section>第三项</section>
+    <section>第四项</section>
+    <section>第五项</section>
+
+    <hr>
+    <p>借助 Jetpack WindowManager 库，应用开发者可为新的设备外形规格和多窗口环境提供支持。该库为 API 版本 14 及更高版本提供通用的 API 接口。初始版本以可折叠设备为目标，不过未来版本将支持更多屏幕类型和窗口功能。</p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis incidunt, maxime nobis numquam officia quaerat quas quibusdam similique voluptatibus? Adipisci aut blanditiis facere id laborum magni maiores modi, obcaecati quaerat!</p>
+
+    <p>a, b, c, d, e, f, g, h, i, g, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z, </p>
+</body>
+</html>

@@ -1,0 +1,42 @@
+#nav{
+    width: 300px;
+    /*background: #a0a0a0;*/
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+
+}
+.title{
+    font-size: 18px;
+    font-weight: bold;
+    text-indent: 1em;
+    line-height: 30px;
+    background: red url("../images/d.png") 270px 5px no-repeat;
+}
+/*ul li
+list-style: none;
+list-style: circle; 空心圆
+list-style: decimal; 数字
+list-style: square; 正方形
+
+*/
+/*ul {*/
+/*    background: #a0a0a0;*/
+/*}*/
+ul li {
+    height: 24px;
+    list-style: none;
+    text-indent: 1em;
+    background-image:  url("../images/d.png");
+    background-repeat: no-repeat;
+    background-position: 200px 2px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #000;
+}
+a:hover {
+    color: orange;
+    text-decoration: underline;
+}

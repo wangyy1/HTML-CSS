@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>clearfix</title>
+    <style>
+        .box1{
+            border: 10px red solid;
+        }
+
+        .box2{
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+        }
+
+        /*1.使用一个空标签清除塌陷问题*/
+/*        .box3{
+            clear: left;
+        }*/
+
+        /*2.使用css 伪元素添加一个内容*/
+        .clearfix::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+<div class="box1 clearfix">
+    <div class="box2"></div>
+<!--    <div class="box3"></div>-->
+</div>
+</body>
+</html>

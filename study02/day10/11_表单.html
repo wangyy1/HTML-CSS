@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+</head>
+<body>
+<!--
+    表单（form）
+        - 在网页中，通过表单来将信息提交给服务器
+
+    使用form标签来创建一个表单
+-->
+
+<!--action用来指定表单要提交到哪-->
+<form action="target.html">
+    <!--    表单项-->
+    <!--    文本框
+            - input type属性为text
+            - 如果希望表单中的数据真的被提交给服务器，
+                必须为表单项指定name属性
+    -->
+    <input type="text" name="username">
+
+    <!--
+        提交按钮
+            - input type属性为submit
+            - 可以通过value属性来修改按钮上的文字
+    -->
+    <input type="submit" value="登录">
+
+</form>
+
+</body>
+</html>

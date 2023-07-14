@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>旋转</title>
+
+    <style>
+        body{
+            /*
+                perspective 用来设置透视的效果
+                    需要一个长度作为值，长度表示人眼和屏幕的距离
+            */
+            perspective: 800px;
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+            margin: 200px auto;
+            transition: all 3s;
+            /*
+                transform-origin 指定变形的原点
+            */
+            transform-origin: top center;
+            /*transform-origin: 0 0;*/
+        }
+
+        .box1:hover{
+            /*
+                rotateX 沿x轴旋转
+                rotateY 沿y轴旋转
+                rotateZ 沿z轴旋转
+
+                单位：
+                    deg 度
+                    turn 圈
+            */
+            /*transform: rotateX(1turn) rotateY(1turn) rotateZ(10turn);*/
+
+            /*transform: translateX(100px) rotateY(45deg);*/
+            transform:  rotateZ(2turn) ;
+
+        }
+    </style>
+
+</head>
+<body>
+<div class="box1"></div>
+</body>
+</html>

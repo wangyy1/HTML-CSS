@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /*
+        align-content 属性与 justify-content 属性类似，可以在弹性盒子的侧轴还有多余空间时调整容器内项目的对齐方式,需要配合flex-wrap使用
+            stretch 默认值，将项目拉伸以占据剩余空间
+            center 项目在容器内居中排布
+            flex-start 项目在容器的顶部排列
+            flex-end 项目在容器的底部排列
+            space-between 多行项目均匀分布在容器中，其中第一行分布在容器的顶部，最后一行分布在容器的底部
+            space-around 多行项目均匀分布在容器中，并且每行的间距（包括离容器边缘的间距）都相等
+            initial 将此属性设置为属性的默认值
+            inherit 从父元素继承该属性的值
+        */
+        #content {
+            height: 600px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: initial;
+            background: yellow;
+        }
+        #content div {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            background: blue;
+            text-align: center;
+            line-height: 100px;
+        }
+
+    </style>
+</head>
+<body>
+<div id="content">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+    <div>11</div>
+    <div>13</div>
+</div>
+</body>
+</html>

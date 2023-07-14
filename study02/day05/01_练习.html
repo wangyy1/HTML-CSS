@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*
+            清除元素的默认样式
+        */
+        *{
+            /*重置元素的padding和margin*/
+            margin: 0;
+            padding: 0;
+        }
+
+        /*
+            网页中的很多的元素都会自带一些默认样式
+         */
+        ul{
+            /*去除项目符号*/
+            list-style: none;
+            width: 190px;
+            /*height: 470px;*/
+            background-color: #aabbcc;
+            /*border-bottom: 1px red solid;*/
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        img {
+            /*
+               vertical-align 垂直对齐方式
+           */
+            vertical-align: top;
+            width: 190px;
+        }
+
+        .box{
+            border: 2px red solid;
+        }
+    </style>
+</head>
+<body>
+
+<!--
+    在网页中，图片的对齐方式和文字是一样的，默认都是沿着元素的基线对齐的
+<div class="box">
+    <img src="./imgs/1.png" alt="">
+</div>
+
+<hr>
+
+-->
+
+<ul>
+    <li><a href="#"><img src="./imgs/1.png" alt=""></a></li>
+    <li><a href="#"><img src="./imgs/2.png" alt=""></a></li>
+    <li><a href="#"><img src="./imgs/3.png" alt=""></a></li>
+</ul>
+
+<div style="width: 100px; height: 100px; background-color: red"></div>
+<!--
+<div>
+    <a href="#"><img src="./imgs/1.png" alt=""></a>
+    <a href="#"><img src="./imgs/2.png" alt=""></a>
+    <a href="#"><img src="./imgs/3.png" alt=""></a>
+</div>
+-->
+
+</body>
+</html>

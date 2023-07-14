@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /*
+        align-self 属性允许您为某个项目设置不同于其它项目的对齐方式，该属性可以覆盖 align-items 属性的值
+        */
+        #content {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            border: 1px solid #ccc;
+            align-items: flex-end;;
+            height: 200px;
+        }
+        #content div {
+            width: 100px;
+            height: 100px;
+            background: blue;
+            text-align: center;
+            line-height: 100px;
+            color: white;
+        }
+        #content div:nth-child(4) {
+            align-self: flex-start;
+        }
+
+
+    </style>
+</head>
+<body>
+<div id="content">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /*
+        order 属性用来设置项目在容器中出现的顺序，您可以通过具体的数值来定义项目在容器中的位置
+        */
+        #content {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        #content div {
+            width: 100px;
+            height: 100px;
+            background: blue;
+            text-align: center;
+            line-height: 100px;
+            color: white;
+        }
+
+        #content div:nth-child(1) {
+            order: 5;
+        }
+
+    </style>
+</head>
+<body>
+<div id="content">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+</div>
+</body>
+</html>

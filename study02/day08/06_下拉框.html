@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>下拉框</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .outer {
+            font-size: 20px;
+            margin-top: 100px;
+            margin-left: 100px;
+            position: relative;
+        }
+
+        .title {
+            width: 120px;
+            border: 2px red solid;
+            background-color: #bfa;
+        }
+
+        .content {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: deepskyblue;
+            border: 2px red solid;
+            display: none;
+        }
+
+        .outer:hover .content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div class="outer">
+    <div class="title">
+        下拉框的标题
+    </div>
+    <div class="content">
+        下拉框的内容
+    </div>
+</div>
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid assumenda distinctio odit quam vero? Aliquam aliquid culpa dolores harum laboriosam molestiae necessitatibus nulla perspiciatis porro quod, sed sint, vitae voluptatum.
+</body>
+</html>

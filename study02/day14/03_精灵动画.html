@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>精灵动画</title>
+
+    <style>
+        .box1 {
+            height: 271px;
+            width: 132px;
+            background-image: url("./images/bigtap-mitu-queue-big2.png");
+            /*transition: background-position .3s steps(3);*/
+
+            animation: mitu 1s steps(4) infinite;
+
+        }
+        /*.box1:hover{*/
+        /*    background-position: -396px;*/
+        /*}*/
+
+        /*关键帧*/
+        @keyframes mitu {
+            from {
+                background-position: 0 0;
+            }
+
+            to {
+                background-position: -528px 0;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+<div class="box1"></div>
+</body>
+</html>

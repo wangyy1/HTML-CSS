@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>立方体</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            perspective: 800px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .cube {
+            width: 200px;
+            height: 200px;
+            /*background-color: #bfc;*/
+            margin: 200px auto;
+            position: relative;
+            /*transform: rotateY(45deg);*/
+            /*开启3d效果*/
+            transform-style: preserve-3d;
+            transition: all 10s;
+        }
+        .cube:hover{
+            transform: rotateX(1turn) rotateY(1turn);
+            /*transform: rotateY(45deg) scaleZ(2);*/
+        }
+
+        .cube li {
+            width: 200px;
+            height: 200px;
+            font-size: 50px;
+            opacity: .8;
+            color: white;
+            text-align: center;
+            line-height: 200px;
+            position: absolute;
+        }
+
+        .cube li:nth-child(1) {
+            background-color: tomato;
+            transform: translateZ(100px);
+        }
+
+        .cube li:nth-child(2) {
+            background-color: #bfc;
+            transform: rotateY(90deg) translateZ(100px);
+        }
+
+        .cube li:nth-child(3) {
+            background-color: orange;
+            transform: rotateY(-90deg) translateZ(100px);
+        }
+
+        .cube li:nth-child(4) {
+            background-color: yellowgreen;
+            transform: rotateX(90deg) translateZ(100px);
+        }
+
+        .cube li:nth-child(5) {
+            background-color: deepskyblue;
+            transform: rotateX(-90deg) translateZ(100px);
+        }
+
+        .cube li:nth-child(6) {
+            background-color: purple;
+            transform: translateZ(-100px);
+        }
+
+    </style>
+</head>
+<body>
+<ul class="cube">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+</ul>
+</body>
+</html>

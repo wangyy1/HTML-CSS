@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /*
+        flex-direction 主轴方向 row row-reverse column column-reverse
+        flex-wrap 如何换行 nowrap wrap wrap-reverse
+        flex-flow flex-direction和flex-wrap简写 row nowrap
+        justify-content 在主轴上的对齐方式
+            flex-start 主轴的起始位置对齐
+            flex-end 主轴结束位置对齐
+            center 居中
+            space-between 两个以上的项目，均匀排列
+            space-around 每个项目两侧的间距相等
+        align-items 定义项目在交叉轴（纵轴）上如何对齐
+            flex-start 交叉轴的起点对齐
+            flex-end 交叉轴的终点对齐
+            content 交叉轴中点对齐
+            baseline 项目的第一行文字的基线对齐
+            stretch 如果项目未设置高度或设为auto，将占满整个容器的高度
+        */
+        #content {
+            height: 200px;
+            display: flex;
+            flex-direction: row;
+            /*flex-wrap: wrap-reverse; */
+            /*justify-content: space-around;*/
+            align-items: stretch;
+            background: yellow;
+        }
+        #content div {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            background: blue;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        #content div:nth-of-type(2) {
+            padding-top: 30px;
+        }
+
+    </style>
+</head>
+<body>
+<div id="content">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+<!--    <div>4</div>-->
+<!--    <div>5</div>-->
+<!--    <div>6</div>-->
+<!--    <div>7</div>-->
+<!--    <div>8</div>-->
+<!--    <div>9</div>-->
+<!--    <div>10</div>-->
+<!--    <div>11</div>-->
+<!--    <div>13</div>-->
+</div>
+</body>
+</html>

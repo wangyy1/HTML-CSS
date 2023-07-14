@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            width: 100px;
+            height: 75px;
+            background-color: red;
+            border: 1px solid black;
+            margin: 10px;
+        }
+        div#div1{
+            transition: width, height 2s;
+            -webkit-transition: width 2s, height 2s; /* Safari */
+        }
+        div#div1:hover {
+            width: 300px;
+            height: 225px;
+        }
+
+        div#div2{
+            transition: width 2s, height 2s, transform 2s;
+            -webkit-transition: width 2s, height 2s, -webkit-stransform 2s; /* Safari */
+        }
+        div#div2:hover {
+            width: 300px;
+            height: 225px;
+            transform: rotate(180deg);
+            -webkit-transform: rotate(180deg); /*Chrome, Safari Opera*/
+        }
+
+        div#div3{
+            width: 100px;
+            height: 100px;
+            -webkit-transition: width 2s, height 2s, -webkit-stransform 2s; /* For Safari 3.1 to 6.0 */
+            transition: width 2s, height 2s, transform 2s;
+        }
+        div#div3:hover {
+            width: 200px;
+            height: 200px;
+            transform: rotate(180deg);
+            -webkit-transform: rotate(180deg); /*Chrome, Safari Opera*/
+        }
+
+        div#div4{
+            width: 100px;
+            height: 100px;
+            transition-property: width;
+            transition-duration: 2s;
+            transition-timing-function: ease-in;
+            transition-delay: 2s;
+        }
+        div#div4:hover {
+            width: 200px;
+            height: 200px;
+        }
+
+
+    </style>
+</head>
+<body>
+<div id="div1"></div>
+
+<div id="div2">鼠标移动到 div 元素上，查看过渡效果。</div>
+<div id="div3">鼠标移动到 div 元素上，查看过渡效果。</div>
+<div id="div4">鼠标移动到 div 元素上，查看过渡效果。</div>
+
+</body>
+</html>

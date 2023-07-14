@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>背景</title>
+    <style>
+        .box1 {
+            width: 400px;
+            height: 400px;
+            background-color: #bfa;
+            background-image: url("./images/1.jpeg");
+            background-repeat: no-repeat;
+            /*
+                background-size 用来设置背景图片的尺寸
+            */
+            /*background-size: 200px auto;*/
+            /*background-size: auto 200px;*/
+            /*background-size: 200px 200px;*/
+            /*background-size: 100% auto;*/
+            /*background-size: auto 100% ;*/
+
+            /*contain 缩放图片使得图片可以在元素中完整显示，元素有的地方可能会不显示背景*/
+            background-size: contain;
+
+            /*cover 缩放图片使得图片可以在将元素撑满，图片可能显示不全*/
+            /*background-size: cover;*/
+
+            /*background-size: 200px;*/
+
+            background: #bfa url("./images/2.jpeg") no-repeat 0 0/auto 100%;
+        }
+    </style>
+</head>
+<body>
+<div class="box1"></div>
+</body>
+</html>

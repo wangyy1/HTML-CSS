@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表格的对齐方式</title>
+
+    <style>
+        table{
+            width: 80%;
+            border-collapse: collapse;
+        }
+
+        td{
+            height: 200px;
+            border: 1px black solid;
+            text-align: center;
+            /*    文字在td中会自动垂直居中*/
+            vertical-align: middle;
+        }
+
+        .box1{
+            display: table-cell;
+            width: 400px;
+            height: 400px;
+            border: 10px red solid;
+            vertical-align: middle;
+        }
+
+        .box2{
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            background-color: greenyellow;
+
+            /*
+                作业一：
+                    总结我们目前学过的居中方式，并说明一下它们的区别！
+            */
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="box1">
+    <div class="box2"></div>
+</div>
+
+<table>
+    <tr>
+        <td>A</td>
+        <td>B</td>
+        <td>C</td>
+        <td>D</td>
+    </tr>
+</table>
+</body>
+</html>

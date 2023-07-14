@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>a的伪类</title>
+    <style>
+        /**
+        注意：
+            1.active必须写在hover下方，否则设置失效
+            2.activity和hover必须写在link和visited下方，否则设置失效
+            3.一般写的顺序是link->visited->hover->active
+         */
+
+        a:link { /*正常*/
+            color: red;
+        }
+
+        a:visited { /*访问过的*/
+            color: orange;
+        }
+
+        a:hover { /*鼠标移入a标签*/
+            color: greenyellow;
+        }
+
+        a:active { /*鼠标点击的效果*/
+            color: deepskyblue;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<a href="https://lilichao.com">访问过的</a>
+<a href="https://lilichao.com">未访问过的</a>
+
+</body>
+</html>

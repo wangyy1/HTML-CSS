@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>网页的背景</title>
+    <style>
+        .box1{
+            width: 400px;
+            height: 400px;
+            /*
+               background-color 背景颜色
+               background-image 背景图片
+               background-repeat 背景的重复方式
+                   - 可选值：
+                       repeat 默认值，背景图片会沿元素的水平垂直双方向重复
+                       repeat-x 水平方向重复
+                       repeat-y 垂直方向重复
+                       no-repeat 不重复
+                       space 背景图片充满元素，无法完整充满使用空白隔开
+                       round 背景图片自动缩放以充满元素
+               background-position 设置背景图片的位置
+                   - 可选值：
+                       top bottom left right center
+                           - 可以从上述关键字中任选两个来设置一个背景图片的位置
+                           - 如果只传了一个关键字，则第二个默认就是center
+
+                   background-position: 水平偏移量 垂直偏移量
+                       水平偏移量 值越大，背景图片越右移，可以设置负值
+                       垂直偏移量 值越大，背景图片越下移，可以设置负值
+
+
+           */
+            background-color: #bfa;
+            background-image: url("./images/4.png");
+            background-repeat: no-repeat;
+            /*background-position: 100px 100px;*/
+            background-position: center;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="box1"></div>
+
+</body>
+</html>

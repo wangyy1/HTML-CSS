@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table{
+            width: 80%;
+            /*border: 1px solid #000;*/
+            border-collapse: collapse; /*边框合并，相邻的边框合并成一个*/
+            text-align: center;
+        }
+        td{
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+<!--
+    表格（table）
+        - 和日常生活中使用的表格一样，在网页中也以创建表格
+        - 可以通过表格来表示一些格式化的数据
+
+    使用table来创建一个表格
+-->
+<table>
+    <!--    caption表示表格的标题-->
+    <caption>学生列表</caption>
+    <!--        表格的头部-->
+    <thead>
+    <!--        tr表示一行-->
+    <tr>
+        <!--        th用来表示表头中的单元格的-->
+        <th>学号</th>
+        <th>姓名</th>
+        <th>性别</th>
+        <th>年龄</th>
+        <th>住址</th>
+    </tr>
+    </thead>
+
+    <!--        表格主体-->
+    <tbody>
+    <tr>
+        <!--        td表示一个单元格-->
+
+        <td>1</td>
+        <td>孙悟空</td>
+        <td>男</td>
+        <td>18</td>
+        <td>花果山</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>猪八戒</td>
+        <td>男</td>
+        <td>28</td>
+        <td>高老庄</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>沙和尚</td>
+        <td>男</td>
+        <td>38</td>
+        <!--        rowspan纵向的合并单元格-->
+        <td rowspan="2">流沙河</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>唐僧</td>
+        <td>男</td>
+        <td>16</td>
+    </tr>
+    </tbody>
+
+    <!--        表格的底部-->
+    <tfoot>
+    <tr>
+        <!--        colspan 横向的合并单元格-->
+        <td colspan="3"></td>
+        <td>合计：</td>
+        <td>4人</td>
+    </tr>
+    </tfoot>
+</table>
+
+</body>
+</html>

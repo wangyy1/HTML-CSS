@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轮播图</title>
+    <!--    引入重置样式表-->
+    <link rel="stylesheet" href="./css/reset.css">
+    <!--    引入fontawesome-->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <style>
+        img {
+            vertical-align: top;
+        }
+
+        /*设置外层容器的样式*/
+        .banner {
+            overflow: hidden;
+            width: 590px;
+            height: 470px;
+            margin: 100px auto;
+            position: relative;
+        }
+
+        /*    设置图片*/
+        .img-list li {
+            position: absolute;
+        }
+
+        .img-list li:nth-child(3) {
+            z-index: 1;
+        }
+
+        /*    设置左右翻页的箭头*/
+        .prev, .next {
+            box-sizing: border-box;
+            position: absolute;
+            z-index: 999;
+            width: 32px;
+            height: 28px;
+            color: rgba(255, 255, 255, .8);
+            background-color: rgba(0, 0, 0, .15);
+            top: 0;
+            bottom: 0;
+            margin: auto 0;
+            line-height: 28px;
+            font-size: 16px;
+            text-align: center;
+            cursor: pointer; /*设置鼠标的形状*/
+        }
+
+        .next {
+            right: -6px;
+            border-top-left-radius: 40px;
+            border-bottom-left-radius: 40px;
+
+        }
+
+        .prev {
+            border-top-right-radius: 40px;
+            border-bottom-right-radius: 40px;
+            left: -6px;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, .5);
+        }
+
+        /*    设置导航点的样式*/
+
+        .slider_indicators {
+            position: absolute;
+            z-index: 999;
+            bottom: 20px;
+            left: 30px;
+        }
+
+        .slider_indicators li {
+            float: left;
+            box-sizing: border-box;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, .4);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            margin-right: 8px;
+        }
+
+        .slider_indicators li:hover,
+        .slider_indicators li.active {
+            background-color: rgba(255, 255, 255);
+            outline: 3px solid rgba(255, 255, 255, .2);
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="banner">
+    <ul class="img-list">
+        <li>
+            <a href="#">
+                <img src="./imgs/1.jpg" alt="">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="./imgs/2.avif" alt="">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="./imgs/3.jpg" alt="">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="./imgs/4.jpg" alt="">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="./imgs/5.jpg" alt="">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="./imgs/6.jpg" alt="">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="./imgs/7.jpg" alt="">
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="./imgs/8.jpg" alt="">
+            </a>
+        </li>
+    </ul>
+    <div class="prev-next">
+        <div class="prev">
+            <i class="fa-solid fa-angle-left"></i>
+        </div>
+        <div class="next">
+            <i class="fa-solid fa-angle-right"></i>
+        </div>
+    </div>
+    <ul class="slider_indicators">
+        <li class="active"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</div>
+</body>
+</html>

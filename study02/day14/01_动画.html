@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动画</title>
+    <style>
+        @keyframes move {
+            from {
+                background-color: #bfa;
+                margin-left: 0px;
+            }
+
+
+            to {
+                background-color: deepskyblue;
+                margin-left: 500px;
+            }
+        }
+
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+            animation-name: move;
+            /*
+                animation-duration 一次动画需要的时间
+            */
+            animation-duration: 5s;
+
+            /*
+                animation-iteration-count 动画重复的次数
+            */
+            /*animation-iteration-count: infinite;*/
+
+            /*
+                animation-delay 动画的延时，只有再第一次有效
+            */
+            animation-delay: 5s;
+
+            /*
+                animation-timing-function 时间函数
+            */
+            /*animation-timing-function: cubic-bezier(.42,1.56,1,-1.37);*/
+            /*animation-timing-function: steps(3);*/
+
+
+            /*
+                animation-direction
+                    动画的方向
+                    - 可选值：
+                        normal 默认值
+                        reverse 动画反向执行
+                        alternate 动画正向反向交替执行
+                        alternate-reverse 和alternate相反
+            */
+            /*animation-direction: alternate-reverse;*/
+
+            /*
+                animation-fill-mode
+                    - 动画的填充模式
+                    - 可选值：
+                        none 默认值 延迟时元素保持不变，动画执行结束恢复原状
+                        forwards 延迟时元素保持不变，动画执行结束保持to的状态
+                        backwards 延迟时元素变为from状态，动画执行结束恢复原状
+                        both 延迟时元素变成from状态，动画执行结束保持to的状态
+
+            */
+            /*animation-fill-mode: both;*/
+
+
+            /*
+                animation-play-state
+                    - 动画的播放状态
+                    - 可选值：
+                        paused 暂停
+              */
+            /*animation-play-state: running;*/
+
+            /*
+                animation 简写属性可以同时设置所有动画相关的样式
+            */
+        }
+
+        .box1:hover{
+            animation-play-state: paused;
+        }
+
+    </style>
+</head>
+<body>
+<div class="box1"></div>
+</body>
+</html>
