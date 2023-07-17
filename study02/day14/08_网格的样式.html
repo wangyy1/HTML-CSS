@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>网格的样式</title>
+    <style>
+        body{
+            display: grid;
+
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 150px 200px 200px 150px;
+            margin: 0 200px;
+            /*grid-column-gap: 10px;*/
+            /*grid-row-gap: 10px;*/
+            grid-gap: 20px 10px;
+        }
+        .box1{
+            background-color: tomato;
+            /*grid-column-start: 1;*/
+            /*grid-column-end: -1;*/
+            grid-column: 1/-1;
+            /*
+                        可以通过z-index来调整网格项的层级
+
+                         grid-column 同时设置列开始和结束
+                            grid-column:开始/结束
+                         grid-row 同时设置行开始和结束
+                            grid-row:开始/结束
+                         grid-area 同时设置行列的开始和结束
+                            grid-area: 行开始/列开始/行结束/列结束
+                         grid-column-gap 列间距
+                         grid-row-gap 行间距
+
+                         grid-gap 同时指定行间距和列间距
+                            grid-gap 行间距 列间距
+
+                    */
+        }
+        .box2{
+            background-color: #bfc;
+            /*grid-row-start: 2;*/
+            /*grid-row-end: 4;*/
+            grid-row: 2/4;
+        }
+        .box3{
+            background-color: orange;
+            grid-column-start: 2;
+            grid-column-end: -1;
+        }
+        .box4{
+            background-color: yellowgreen;
+        }
+        .box5{
+            background-color: yellow;
+        }
+        .box6{
+            background-color: skyblue;
+        }
+        .box7{
+            background-color: silver;
+            grid-column-start: 1;
+            grid-column-end: -1;
+        }
+    </style>
+</head>
+<body>
+<div class="box1">网页头部</div>
+<div class="box2">菜单</div>
+<div class="box3">上半部分</div>
+<div class="box4">图片</div>
+<div class="box5">图片</div>
+<div class="box6">图片</div>
+<div class="box7">底部</div>
+</body>
+</html>

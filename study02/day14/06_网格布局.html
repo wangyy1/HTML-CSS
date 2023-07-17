@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>网格布局</title>
+
+    <style>
+        .outer {
+            width: 800px;
+            border: 10px #333 solid;
+            display: grid;
+            /*grid-template-columns: 100px 300px 200px 200px;*/
+            /*grid-template-columns: 100px 300px 100px auto;*/
+
+            /*grid-template-columns: 1fr 1fr 1fr 1fr;*/ /*表示把网格分成四份，每份的宽度一样*/
+            /*
+                repeat() 来重复的设置 第一个参数表示重复次数， 第二个参数表示分数以及几列
+            */
+            grid-template-columns: repeat(2, 1fr 2fr);
+            /*grid-template-columns: 1fr 2fr 1fr 2fr;*/
+
+            grid-template-rows: 100px 200px 100px;
+            /*
+                网格容器
+                    - 要使用网格布局必须先设置网格容器
+                    - 使用 display:grid 或 display:inline-grid
+                    - 默认情况下，我们开启的是一个单列的网格布局
+
+                      grid-template-columns
+                          - 用来设置网格布局的列数，设置的是每列的宽度
+                      grid-template-rows
+                          - 用来设置网格布局的行数
+
+                网格项
+                    - 网格容器的子元素都会自动变为网格项
+            */
+
+
+        }
+
+        .box1 {
+            background-color: tomato;
+        }
+
+        .box2 {
+            background-color: #bfa;
+            /*
+                网格项
+                    grid-column-start 网格列的起始位置
+                    grid-column-end   网格列的结束位置
+                    grid-row-start   网格行的起始位置
+                    grid-row-end   网格行的结束位置
+
+                span 3 占用 3格
+            */
+            grid-column-start: 2;
+            grid-column-end: span 3;
+
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+
+        .box3 {
+            background-color: greenyellow;
+        }
+
+        .box4 {
+            background-color: orange;
+        }
+
+        .box5 {
+            background-color: skyblue;
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+<div class="outer">
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <div class="box3">box3</div>
+    <div class="box4">box4</div>
+    <div class="box5">box5</div>
+</div>
+
+</body>
+</html>
